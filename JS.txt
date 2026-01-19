@@ -1,0 +1,36 @@
+JS Datatype==> Number , String , Boolean, Object
+Variables
+operators ==> 
+    Unary / Binary
+1 Arithmetic + - / * %
+ 2 Assignment = += -= /= %= *=
+ 3 Relational == >= <= != > <
+  4 Logical && || !
+    ++ increment
+     -- decrement
+
+Loops ==> for performing reapetative task
+ for
+ do..while
+ whlie
+
+ Conditional statement=>>
+ if...else
+
+ if...else if...else
+
+ switch...case
+
+ functions ==> is block of code , ehich is resuable
+
+ What is program?
+    program is a set instructions.
+    1 . datatype declaration instruction.
+    2. I/O Instruction.
+    3. Arithmetic operation instruction
+    4. looping/logical instruction.
+
+what is syntax?
+    syntx is a template for writing an istructjon.
+what is software?
+    software is a set complex programs.
