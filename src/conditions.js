@@ -26,9 +26,9 @@ if (marks >= 85) {
     console.log("fAIL");
 }
 
-let age = 53
-if (!age < 18) {
+let age = 17
+if (!age > 18) {
     console.log("Adult");
-}else{
+} else {
     console.log("Minor");
 }
