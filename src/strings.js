@@ -13,8 +13,11 @@ console.log(city[3])
 let friendsNams = ["Ashish", "Suraj", "Satish", "Pawan"]
 for (let index = 0; index < friendsNams.length; index++) {
     let name = friendsNams[index]
-    if (name[name.length - 1] === 'j') {
+    if (name[name.length - 1] == 'j' ||
+        name[name.length - 1] == 'a' ||
+        name[name.length - 1] == 'j'
+    ) {
         console.log(name)
-        break
     }
+
 }
