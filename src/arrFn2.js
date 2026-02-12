@@ -57,3 +57,23 @@ console.log(res6)
 
 let res7 = persons.sort((a, b) => a.age > b.age ? -1 : 1)
 console.log(res7)
+
+
+let totalAge = persons.reduce((sum, per) => {
+    return sum += per.age
+}, 0)
+console.log("Total", totalAge)
+let avgAge = totalAge / persons.length
+console.log("AVG", avgAge)
+
+let maxAge = persons.reduce((max, per) => {
+    return per.age > max ? per.age : max
+}, 0)
+
+console.log("Max",maxAge)
+
+let minAge = persons.reduce((min, per) => {
+    return per.age > max ? per.age : max
+}, persons[0].age)
+
+console.log(minAge)
