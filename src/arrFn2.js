@@ -70,10 +70,16 @@ let maxAge = persons.reduce((max, per) => {
     return per.age > max ? per.age : max
 }, 0)
 
-console.log("Max",maxAge)
+console.log("Max", maxAge)
 
-let minAge = persons.reduce((min, per) => {
-    return per.age > max ? per.age : max
-}, persons[0].age)
+// {
+//     male: 23,
+//         female: 23
+// }
 
-console.log(minAge)
+let genderCount = persons.reduce((acc, per) => {
+    acc[per.gender] = (acc[per.gender] || 0) + 1
+    return acc
+}, {})
+
+console.log(genderCount)

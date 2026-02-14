@@ -38,7 +38,7 @@ person.hobbies.push("Drawing")
 delete person.age
 console.log(person)
 
-
+console.log(person["age"])
 //MOST IMPORTANT
 let personList = [
     {
