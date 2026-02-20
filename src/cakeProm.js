@@ -71,16 +71,32 @@ let decorateCake = (ck3, next) => {
 }
 
 /// start making cake
-collectIngrediants(["floour", "sugar", "soda", "ghee"])
-    .then((cakeresult) => {
-        betterPreperation(cakeresult, "choco")
-            .then((cakRes) => {
-                doBacking(cakRes, 0, 0)
-                    .then((ckRes) => {
-                        console.log(ckRes)
-                        console.log("next do....")
-                    })
-            })
-    }).catch((err) => {
-        console.log(err)
-    });
+// collectIngrediants(["floour", "sugar", "soda", "ghee"])
+//     .then((cakeresult) => {
+//         betterPreperation(cakeresult, "choco")
+//             .then((cakRes) => {
+//                 doBacking(cakRes, 0, 0)
+//                     .then((ckRes) => {
+//                         console.log(ckRes)
+//                         console.log("next do....")
+//                     })
+//             })
+//     }).catch((err) => {
+//         console.log(err)
+//     });
+
+let startCakeMaking = async () => {
+
+    try {
+        let res1 = await collectIngrediants(["sugar"])
+        let res2 = await betterPreperation(res1, "choco")
+        let res3 = await doBacking(res2, 20, 120)
+        console.log(res3)
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+//call a function
+startCakeMaking()
